@@ -3,15 +3,19 @@
 \input{packages.tex}
 \usepackage{enumitem}
 \usepackage{pdfpages}
+% \setcounter{secnumdepth}{3}
+
+\newcounter{tabrow}
+\newcommand{\nextquestion}{\refstepcounter{tabrow}}
 
 \numberwithin{equation}{section}
 
-\title{{\Large\textbf{GSoC-2021}}}
+\title{{\Large\textbf{Google Summer of Code-2021}}}
 \author{Devansh Shukla}
 \date{}
 
 \fancyfoot[c]{\thepage}
-\fancyfoot[r]{Devansh Shukla}
+\fancyfoot[r]{devanshshukla99}
 
 \newenvironment{focus}
     {   \hspace*{-0.2cm}
@@ -28,7 +32,17 @@
 
 \begin{document}
 	
-	\maketitle
+	% \maketitle
+	\begin{center}
+		{\Large\textbf{Google Summer of Code - 2021}} \\
+		\vspace*{0.4cm}
+		{\large\textbf{Proposal for 3D Plotting in SunPy}} \\
+		\vspace*{0.25cm}
+		{\textbf{Devansh Shukla}} \\
+		\vspace*{0.25cm}
+		{\textbf{Mentors: Dr. David Stansby, Dr. Stuart Mumford and Dr. Nabil Freij}} 
+		{\rule{\textwidth}{1pt}}
+	\end{center}
 
 	\section{Basic Information}
 		\input{modules/personal_information.tex}
@@ -51,10 +65,9 @@
 		\input{modules/goals.tex}
 		\input{modules/time_commitment.tex}
 		\input{modules/timeline.tex}
+		\input{modules/probable_issues.tex}
 			
 	\section{GSoC}
 		\input{modules/gsoc_info.tex}
 	
-	\includepdf[pages={1}]{modules/timeline_devanshshukla99.pdf}
-
 \end{document}
