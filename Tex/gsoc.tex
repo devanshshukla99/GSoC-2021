@@ -1,0 +1,60 @@
+\documentclass[a4paper, 10pt]{article}
+
+\input{packages.tex}
+\usepackage{enumitem}
+\usepackage{pdfpages}
+
+\numberwithin{equation}{section}
+
+\title{{\Large\textbf{GSoC-2021}}}
+\author{Devansh Shukla}
+\date{}
+
+\fancyfoot[c]{\thepage}
+\fancyfoot[r]{Devansh Shukla}
+
+\newenvironment{focus}
+    {   \hspace*{-0.2cm}
+        \vspace*{-0.5cm}\begin{itemize}[label={$-$}]
+        \setlength\itemsep{0.0cm}
+    }
+    {
+        \end{itemize}\vspace*{-0.2cm}
+    }
+
+\newcommand{\pr}{
+	{\color{blue} PR \#4591}
+}
+
+\begin{document}
+	
+	\maketitle
+
+	\section{Basic Information}
+		\input{modules/personal_information.tex}
+	
+	\section{Education Background}
+		\input{modules/edu.tex}
+
+	\section{Experience in Programming}
+		\input{modules/osexp.tex}
+
+	\section{SunPy}
+		\input{modules/why_sunpy.tex}
+		\input{modules/benefits_3d.tex}
+		\input{modules/current_situation_of_3d_plot.tex}
+		\input{modules/my_contributions.tex}
+
+	\section{Project: 3D Plotting in SunPy}
+		\input{modules/project_abstract.tex}
+		% \input{modules/milestones.tex}
+		\input{modules/goals.tex}
+		\input{modules/time_commitment.tex}
+		\input{modules/timeline.tex}
+			
+	\section{GSoC}
+		\input{modules/gsoc_info.tex}
+	
+	\includepdf[pages={1}]{modules/timeline_devanshshukla99.pdf}
+
+\end{document}
